@@ -50,6 +50,7 @@ function draw(a,b){
 }
 console.log(Uscore);
 
+
 function main(){
 
     rock.addEventListener("click",function(){
