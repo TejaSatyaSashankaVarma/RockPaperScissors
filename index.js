@@ -48,9 +48,6 @@ function win(a,b){
 function draw(a,b){
     Result.innerHTML="Both choose "+a+". It's a DRAW!";
 }
-console.log(Uscore);
-
-
 function main(){
 
     rock.addEventListener("click",function(){
