@@ -35,13 +35,13 @@ function ComputerChoice(){
     const comp=choices[Math.round(Math.random()*2)];
     return comp;
 }
-function win(a,b){
+function lose(a,b){
     Uscore++;
     UserScore.innerHTML=Uscore;
     Result.innerHTML=a+" beats "+b+". You WIN!";
     document.getElementById(UserChoice).classList.add('green');
 }
-function lose(a,b){
+function win(a,b){
     Bscore++;
     BotScore.innerHTML=Bscore;
     Result.innerHTML=b+" beats "+a+". You LOSE!";
