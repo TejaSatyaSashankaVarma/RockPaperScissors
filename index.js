@@ -10,7 +10,7 @@ const scissors=document.getElementById("s");
 
 function game(UserChoice){
     const Comp=ComputerChoice();
-    const User=UserChoice;
+    const User= UserChoice;
     switch(Comp+User){
         case "RockScissors":
         case "PaperRock":
@@ -39,7 +39,6 @@ function lose(a,b){
     Uscore++;
     UserScore.innerHTML=Uscore;
     Result.innerHTML=a+" beats "+b+". You WIN!";
-    document.getElementById(UserChoice).classList.add('green');
 }
 function win(a,b){
     Bscore++;
@@ -47,7 +46,6 @@ function win(a,b){
     Result.innerHTML=b+" beats "+a+". You LOSE!";
 }
 function draw(a,b){
-    console.log("draw");
     Result.innerHTML="Both choose "+a+". It's a DRAW!";
 }
 console.log(Uscore);
